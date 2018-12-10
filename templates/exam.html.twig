@@ -1,0 +1,38 @@
+{# Templates/exam.html.twig #}
+{# display exam #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'flashbag.html.twig' %}
+    <h1>This is the exam of PHP</h1>
+    <h3>Gonzalo de la Cruz : QR7HAN</h3><hr>
+    <h3>CONTRACTS OR CONNECTOR TABLE DATA</h3>
+
+    <table width="100%" border="1">
+        <thead >
+        <tr style="background-color:grey;">
+            <td>Player Name:</td>
+            <td>Team:</td>
+            <td>Contract from:</td>
+            <td>Contract until:</td>
+        </tr>
+
+        </thead>
+        <tbody>
+        {% for player in players %}
+           {# {% set brand = car.carBrand is null ? "N/A" :
+                car.carBrand.brandName %} #}
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+
+    {{ dump(players) }}
+{% endblock %}

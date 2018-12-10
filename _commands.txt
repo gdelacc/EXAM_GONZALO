@@ -1,0 +1,12 @@
+//DROPING ALL EXISTING DATABASES
+\xampp\php\php bin/console doctrine:schema:drop --force --full-database
+
+//CREATE A NEWONE
+\xampp\php\php bin/console doctrine:database:create
+
+//CREATING/UPDATING THE SCHEMA
+\xampp\php\php bin/console doctrine:schema:update --force
+
+
+//LOAD THE FIXTURES DATA EXAMPLE
+\xampp\php\php bin/console doctrine:fixtures:load --no-interaction -vvv
