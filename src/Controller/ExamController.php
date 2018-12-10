@@ -25,9 +25,9 @@ class ExamController extends Controller
     public function HomeExam (Request $request) {
 
         $contracts = $this->get('app.contract');
-        $players = $contracts->getPlayers();
+        $players = $contracts->getPlayersContracted();
 
-        $twigParams = ["errors"=>"","players"=>$players,"contracts"=>$contracts->getPlayers()];
+        $twigParams = ["errors"=>"","players"=>$players];
 
         Debug::dump($players);
 

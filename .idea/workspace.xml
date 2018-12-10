@@ -4,7 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/src/Controller/ExamController.php" line="27" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99c7fabf-cbaf-4cc8-9b81-f4a62b93959d" name="Default Changelist" comment="" />
+    <list default="true" id="99c7fabf-cbaf-4cc8-9b81-f4a62b93959d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ExamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ExamController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/IContractCrudService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/IContractCrudService.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,14 +102,14 @@
         <counts>
           <entry key="dummy" value="9" />
           <entry key="env" value="6" />
-          <entry key="php" value="374" />
+          <entry key="php" value="376" />
           <entry key="twig" value="109" />
           <entry key="yaml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="374" />
+          <entry key="PHP" value="376" />
           <entry key="PLAIN_TEXT" value="15" />
           <entry key="Twig" value="109" />
           <entry key="YAML" value="10" />
@@ -131,11 +136,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/ExamController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="29" column="92" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
+              <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
               <folding>
                 <element signature="e#120#151#0#PHP" expanded="true" />
               </folding>
@@ -156,11 +161,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Service/IContractCrudService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+              <folding>
+                <element signature="e#117#139#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Service/CarCrudService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state relative-caret-position="405">
+              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
               <folding>
+                <element signature="e#31#52#0#PHP" expanded="true" />
                 <element signature="e#1232#1316#0#PHP" />
                 <element signature="e#1356#1474#0#PHP" />
                 <element signature="e#1514#1795#0#PHP" />
@@ -168,18 +186,6 @@
                 <element signature="e#2984#3093#0#PHP" />
                 <element signature="e#3133#3287#0#PHP" />
                 <element signature="e#3327#4054#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Service/IContractCrudService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-              <folding>
-                <element signature="e#117#139#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -259,6 +265,9 @@
       <dir>$PROJECT_DIR$/src/Controller</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -309,10 +318,10 @@
         <option value="$PROJECT_DIR$/src/Service/CarCrudService.php" />
         <option value="$PROJECT_DIR$/templates/exam.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/Player.php" />
-        <option value="$PROJECT_DIR$/src/Controller/ExamController.php" />
         <option value="$PROJECT_DIR$/src/Entity/Contract.php" />
         <option value="$PROJECT_DIR$/src/Service/ContractCrudService.php" />
         <option value="$PROJECT_DIR$/src/Service/IContractCrudService.php" />
+        <option value="$PROJECT_DIR$/src/Controller/ExamController.php" />
       </list>
     </option>
   </component>
@@ -440,6 +449,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -556,12 +566,12 @@
       <workItem from="1542664357800" duration="5746000" />
       <workItem from="1543320624758" duration="8934000" />
       <workItem from="1543926158571" duration="9327000" />
-      <workItem from="1544439406476" duration="8676000" />
+      <workItem from="1544439406476" duration="9046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65146000" />
+    <option name="totallyTimeSpent" value="65516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-318" y="-1058" width="1920" height="1058" extended-state="6" />
@@ -927,16 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ExamController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="92" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
-          <folding>
-            <element signature="e#120#151#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Car.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1859">
@@ -966,9 +966,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Service/CarCrudService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        <state relative-caret-position="405">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
           <folding>
+            <element signature="e#31#52#0#PHP" expanded="true" />
             <element signature="e#1232#1316#0#PHP" />
             <element signature="e#1356#1474#0#PHP" />
             <element signature="e#1514#1795#0#PHP" />
@@ -992,10 +993,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Service/IContractCrudService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        <state relative-caret-position="300">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding>
             <element signature="e#117#139#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ExamController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+          <folding>
+            <element signature="e#120#151#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

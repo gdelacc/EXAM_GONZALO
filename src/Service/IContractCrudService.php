@@ -13,23 +13,6 @@ use App\Entity\Team;
 
 interface IContractCrudService
 {
-    /**
-     * @param Team
-     * @return Player[]
-     */
-    public function getPlayersbyTeam($team);
-
-    /**
-     * @param Team
-     * @return Player[]
-     */
-    public function getContractedPlayers($team);
-
-    /**
-     * @param Player
-     * @return boolean
-     */
-    public function canBeContrated($player);
 
     /**
      * @param $player_id
