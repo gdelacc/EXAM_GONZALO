@@ -20,10 +20,9 @@
         </thead>
         <tbody>
         {% for player in players %}
-           {# {% set brand = car.carBrand is null ? "N/A" :
-                car.carBrand.brandName %} #}
+
             <tr>
-                <td></td>
+                <td>{{ player.playerName }}</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -36,3 +35,9 @@
 
     {{ dump(players) }}
 {% endblock %}
+
+
+
+
+ {# {% set brand = car.carBrand is null ? "N/A" :
+                car.carBrand.brandName %} #}

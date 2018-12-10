@@ -54,7 +54,6 @@ class Player
         return $this->player_id;
     }
 
-
     /**
      * @return string
      */
@@ -102,6 +101,8 @@ class Player
     {
         $this->player_position = $player_position;
     }
+
+
 
 
 
