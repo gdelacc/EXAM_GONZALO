@@ -15,12 +15,12 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/")
+ * @Route("/exam")
  */
 class ExamController extends Controller
 {
     /**
-     * @Route(path="/exam", name="HomeExam" )
+     * @Route(path="/", name="HomeExam" )
      */
     public function HomeExam (Request $request) {
 
@@ -33,4 +33,36 @@ class ExamController extends Controller
         return $this->render('exam.html.twig', $twigParams);
 
     }
+    /**
+     * @Route(path="/edit/{contract_id}", name="contractEdit" )
+     */
+    public function contractEdit (Request $request, $contract_id=null) {
+
+        $twigParams = ["errors"=>"","contract_id"=>$contract_id];
+
+        return $this->render('exam_edit.html.twig', $twigParams);
+    }
+
+    /**
+     * @Route(path="/delete/{contract_id}", name="contractRemove" )
+     */
+    public function contractRemove (Request $request, $contract_id=null) {
+
+        //TODO: Remove the contract and... retrieve the final list of contracts
+
+        $contracts = $this->get('app.contract');
+
+        $twigParams = ["errors"=>"CONTRACT DELETED!!!","contracts"=>$contracts->getPlayersContracted()];
+
+        return $this->render('exam.html.twig', $twigParams);
+    }
+
+    /**
+     * @Route(path="/add/", name="contractNew" )
+     */
+    public function contractNew (Request $request) {
+
+        return null;
+    }
+
 }

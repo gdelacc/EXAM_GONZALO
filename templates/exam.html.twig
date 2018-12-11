@@ -8,6 +8,12 @@
     <h3>Gonzalo de la Cruz : QR7HAN</h3><hr>
     <h3>CONTRACTS OR CONNECTOR TABLE DATA</h3>
 
+    <a href="{{ path('contractNew') }}">ADD CONTRACT</a><br>
+    <br/>
+        {% block edit_contract %}{%  endblock %}
+        {% block new_contract %}{%  endblock %}
+    <br/>
+
     <table width="100%" border="1">
         <thead >
         <tr style="background-color:grey;">
@@ -15,6 +21,7 @@
             <td>Team:</td>
             <td>Contract from:</td>
             <td>Contract until:</td>
+            <td>OPTION</td>
         </tr>
 
         </thead>
@@ -28,6 +35,10 @@
                 <td>{{ contract.team.teamName }}</td>
                 <td>{{ contract.getStartDate|date('d-m-Y')}}</td>
                 <td>{{ end_date }}</td>
+                <td>
+                    <a href="{{ path('contractEdit', { 'contract_id': contract.getTpId }) }}">EDIT</a>
+                    <a href="{{ path('contractRemove', { 'contract_id': contract.getTpId }) }}">REMOVE</a>
+                </td>
 
             </tr>
         {% endfor %}
