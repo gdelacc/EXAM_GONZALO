@@ -19,13 +19,15 @@
 
         </thead>
         <tbody>
-        {% for player in players %}
+        {% for contract in contracts %}
+            {% set end_date = contract.getEndDate is null ? "CONTRACT ACTIVE" :
+                contract.getEndDate|date('d-m-Y') %}
 
             <tr>
-                <td>{{ player.playerName }}</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>{{ contract.player.playerName }}</td>
+                <td>{{ contract.team.teamName }}</td>
+                <td>{{ contract.getStartDate|date('d-m-Y')}}</td>
+                <td>{{ end_date }}</td>
 
             </tr>
         {% endfor %}
@@ -33,7 +35,7 @@
         </tbody>
     </table>
 
-    {{ dump(players) }}
+    {{ dump(contracts) }}
 {% endblock %}
 
 
