@@ -36,23 +36,25 @@ class ContractCrudService extends CrudService implements IContractCrudService
         return $this->em->getRepository(Contract::class);
     }
 
-
-    public function getPlayerContracted($player_id)
-    {
-        $onePlayer = $this->getRepo()->find($player_id);
-        if (!$onePlayer){
-            throw new NotFoundHttpException("PLAYER NOT FOUND");
-            // controller: throw $this->createNotFoundException()
-        }
-        return $onePlayer;
-    }
-
-    public function getPlayersContracted()
+    public function getContracts()
     {
         return $this->getRepo()->findAll();
     }
 
+    public function newContract($contract)
+    {
+        // TODO: Implement newContract() method.
+    }
 
+    public function updateContract($contract)
+    {
+        // TODO: Implement updateContract() method.
+    }
+
+    public function deleteContract($contract)
+    {
+        // TODO: Implement deleteContract() method.
+    }
 
 
 }

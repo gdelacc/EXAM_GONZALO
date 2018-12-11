@@ -8,6 +8,7 @@
 
 namespace App\Service;
 
+use App\Entity\Contract;
 use App\Entity\Player;
 use App\Entity\Team;
 
@@ -15,13 +16,27 @@ interface IContractCrudService
 {
 
     /**
-     * @param $player_id
-     * @return Player
+     * @return Contract[]
      */
-    public function getPlayerContracted($player_id);
+    public function getContracts();
 
     /**
-     * @return Player[]
+     * @return Bool
+     * @var Contract
      */
-    public function getPlayersContracted();
+    public function newContract($contract);
+
+    /**
+     * @return Bool
+     * @var Contract
+     */
+    public function updateContract($contract);
+
+    /**
+     * @return Bool
+     * @var Contract
+    */
+    public function deleteContract($contract);
+
+
 }

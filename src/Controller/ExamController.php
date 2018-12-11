@@ -26,7 +26,7 @@ class ExamController extends Controller
 
         $contracts = $this->get('app.contract');
 
-        $twigParams = ["errors"=>"","contracts"=>$contracts->getPlayersContracted()];
+        $twigParams = ["errors"=>"","contracts"=>$contracts->getContracts()];
 
         //Debug::dump($players);
 
@@ -38,7 +38,9 @@ class ExamController extends Controller
      */
     public function contractEdit (Request $request, $contract_id=null) {
 
-        $twigParams = ["errors"=>"","contract_id"=>$contract_id];
+        $contracts = $this->get('app.contract');
+
+        $twigParams = ["errors"=>"","contract_id"=>$contract_id,"contracts"=>$contracts->getContracts()];
 
         return $this->render('exam_edit.html.twig', $twigParams);
     }
@@ -52,7 +54,7 @@ class ExamController extends Controller
 
         $contracts = $this->get('app.contract');
 
-        $twigParams = ["errors"=>"CONTRACT DELETED!!!","contracts"=>$contracts->getPlayersContracted()];
+        $twigParams = ["errors"=>"CONTRACT DELETED!!!","contracts"=>$contracts->getContracts()];
 
         return $this->render('exam.html.twig', $twigParams);
     }
